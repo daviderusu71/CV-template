@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CV-ul interactiv al lui David Rusu, dezvoltator web specializat în front-end.">
+  <meta name="keywords" content="David Rusu, CV, dezvoltator web, front-end, JavaScript, React">
+
+  <title>CV Interactiv - David Rusu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2c2151a63.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <img src="assets/profile.jpg" alt="Fotografie de profil a lui David Rusu" class="profile-img" />
+    <h1>David Rusu</h1>
+    <p class="job-title">Web Developer • Front-End</p>
+    <a href="RUSU Curriculum Vitae .pdf" class="btn" download>📄 Descarcă CV</a>
+  </header>
+
+  <section class="about">
+    <h2>Despre mine</h2>
+    <p>Sunt un dezvoltator pasionat de web design modern, performanță și UX/UI. Îmi place să transform ideile în realitate digitală.</p>
+  </section>
+
+  <section class="skills">
+  <h2>Skill-uri</h2>
+  <div class="skill">
+    <p>HTML</p>
+    <div class="progress"><div class="bar html"></div></div>
+  </div>
+  <div class="skill">
+    <p>CSS</p>
+    <div class="progress"><div class="bar css"></div></div>
+  </div>
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="progress"><div class="bar js"></div></div>
+  </div>
+  <div class="skill">
+    <p>React</p>
+    <div class="progress"><div class="bar react"></div></div>
+  </div>
+</section>
+    
+<section class="timeline">
+  <h2>Experiență</h2>
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Front-End Developer</h3>
+      <span>Compania X — 2021-2024</span>
+      <p>Am dezvoltat aplicații web moderne, responsive și performante folosind React și JavaScript.</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Junior Developer</h3>
+      <span>Compania Y — 2019-2021</span>
+      <p>Am învățat bazele dezvoltării web și am colaborat la proiecte interne.</p>
+    </div>
+  </div>
+</section>
+
+<section class="timeline" id="timeline">
+  <h2>Experiență Profesională</h2>
+  <div class="timeline-container">
+    <div class="timeline-item">
+      <span class="timeline-date">2023</span>
+      <h3>Primul proiect freelance</h3>
+      <p>Am creat un site complet pentru un client local.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2024</span>
+      <h3>Lansarea portofoliului personal</h3>
+      <p>Mi-am construit propriul site și am început colaborări internaționale.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2025</span>
+      <h3>Template-uri HTML în vânzare</h3>
+      <p>Am început să vând resurse digitale și site-uri pe platforme ca Gumroad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <h2>Ultimele Articole</h2>
+  <div class="blog-container">
+    <div class="blog-post">
+      <img src="assets/articol1.webp" alt="Articol 1">
+      <h3>Top 5 greșeli când îți faci un site</h3>
+      <p>Descoperă cele mai comune greșeli și cum să le eviți pentru un site de succes.</p>
+      <a href="https://pogor.ro/5-greseli-frecvente-in-crearea-unui-site-web-si-cum-le-evitam/" target="_blank">Citește mai mult</a>
+    </div>
+    <div class="blog-post">
+      <img src="assets/articolo2.jpg" alt="Articol 2">
+      <h3>Cum atragi clienți cu un portofoliu web</h3>
+      <p>Strategii practice pentru a transforma vizitatorii în clienți plătitori.</p>
+      <a href="https://arhispec.ro/articol/cum-sa-atragi-investitori-si-clienti-printr-o-prezentare-structurata-strategii-pentru-un-portofoliu-digital-convingator" target="_blank">Citește mai mult</a>
+    </div>
+    <div class="blog-post">
+      <img src="assets/articolo3.jpg" alt="Articol 3">
+      <h3>Trucuri pentru un design modern în 2025</h3>
+      <p>Ce funcționează în prezent și cum să aplici tendințele actuale în proiecte.</p>
+      <a href="https://www.bonami.ro/c/tendinte-design-interior-2025" target="_blank">Citește mai mult</a>
+    </div>
+  </div>
+</section>
+
+  
+  <section class="projects">
+  <h2>Proiecte</h2>
+  <div class="project-list">
+    <div class="project-item">
+      <h3>Site personal</h3>
+      <p>Site web de prezentare creat cu HTML, CSS și JavaScript.</p>
+      <a href="https://it.wix.com/website/templates/html/portfolio-cv/personal" target="_blank" rel="noopener noreferrer">Vezi proiectul</a>
+    </div>
+    <div class="project-item">
+      <h3>Aplicație ToDo</h3>
+      <p>Aplicație web pentru gestionarea task-urilor zilnice.</p>
+      <a href="https://zapier.com/blog/best-todo-list-apps/" target="_blank" rel="noopener noreferrer">Vezi proiectul</a>
+    </div>
+    <!-- Mai adaugă câte proiecte vrei -->
+  </div>
+</section>
+<br>
+<section class="testimonials">
+  <h2>Testimoniale</h2>
+  <div class="testimonial-list">
+    <div class="testimonial-item">
+        <img src="assets/Ana Popescu.jpg" alt="Ana">
+      <p>"David este un profesionist desăvârșit, mereu atent la detalii și dedicat."</p>
+      <h4>- Ana Popescu, Manager</h4>
+    </div>
+    <div class="testimonial-item">
+        <img src="assets/Ion Ionescu.jpg" alt="Ion">
+      <p>"Colaborarea cu David a fost o experiență extraordinară, recomand cu încredere!"</p>
+      <h4>- Ion Ionescu, Client</h4>
+    </div>
+    <div class="testimonial-item">
+        <img src="assets/Marie.jpg" alt="Maria">
+      <p>"Colaborarea cu David a fost o experiență extraordinară, recomand cu încredere!"</p>
+      <h4>- Maria Ionescu, Client</h4>
+    </div>
+    <div class="testimonial-item">
+        <img src="assets/Nadea.jpg" alt="Nadae">
+      <p>"Colaborarea cu David a fost o experiență extraordinară, recomand cu încredere!"</p>
+      <h4>- Nadea Vrabie, Client</h4>
+    </div>
+    <!-- Adaugă câte testimonialuri vrei -->
+  </div>
+</section>
+
+ <section class="contact" id="contact">
+  <h2>Contactează-mă</h2>
+  <div class="contact-container">
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Numele tău" required />
+      <input type="email" name="user_email" placeholder="Emailul tău" required />
+      <textarea name="message" placeholder="Mesajul tău" required></textarea>
+      <button type="submit">Trimite</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Email:</strong> daviderusu17@yahoo.com</p>
+      <p><strong>Telefon:</strong> +39 3478593182</p>
+      <p><strong>Locație:</strong> Quarto D'Altino, Italia</p>
+    </div>
+    
+  </div>
+  <div class="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.432402225938!2d26.102538415527987!3d44.426767779102374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff37f76eaaab%3A0x4bff44ae2b27e0f0!2sBucurești!5e0!3m2!1sro!2sro!4v1616174295111!5m2!1sro!2sro"
+    width="500" height="300" style="border:0; border-radius: 15px;"
+    allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+<section class="testimonials" id="testimonials">
+  <h2>Păreri de la Clienți</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial active">
+      <p>"Un site incredibil! Rapid, elegant și exact cum am vrut!"</p>
+      <h3>Andrei Popescu</h3>
+    </div>
+    <div class="testimonial">
+      <p>"David este un profesionist! Recomand 100%!"</p>
+      <h3>Maria Ionescu</h3>
+    </div>
+    <div class="testimonial">
+      <p>"Comunicare excelentă și rezultate pe măsură. Bravo!"</p>
+      <h3>Radu Ilie</h3>
+    </div>
+  </div>
+</section>
+
+<section class="calculator" id="calculator">
+  <h2>Calculează Prețul</h2>
+  <form id="priceForm">
+    <label for="service">Alege Serviciul:</label>
+    <select id="service" required>
+      <option value="" disabled selected>-- Selectează --</option>
+      <option value="web">Creare site web - 100€</option>
+      <option value="repair">Reparație PC - 50€</option>
+      <option value="consult">Consultanță IT - 70€</option>
+    </select>
+    <label for="urgency">Urgent? 
+    </label>
+    <select id="urgency" required>
+      <option value="" disabled selected>-- Selectează --</option>
+      <option value="normal">Normal (0€)</option>
+      <option value="urgent">Urgent (+20€)</option>
+    </select>
+    <button type="submit">Calculează Prețul</button>
+    </form>
+    <div id="result" class="result">
+        <p>Prețul total este: <span id="price">0€</span></p>
+
+    </div>
+  </section>
+    
+   <section class="faq" id="faq">
+  <h2>Întrebări Frecvente</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">Cât durează realizarea unui site?</button>
+      <div class="faq-answer">
+        <p>În general, un site simplu se finalizează în 5-7 zile lucrătoare. Pentru proiecte complexe, termenul poate fi mai lung.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Oferi și mentenanță după livrare?</button>
+      <div class="faq-answer">
+        <p>Da, ofer opțiuni de mentenanță lunar sau la cerere. Detalii se discută după livrarea proiectului.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Cum pot plăti pentru servicii?</button>
+      <div class="faq-answer">
+        <p>Se acceptă transfer bancar, Revolut sau PayPal. Plata se face în două tranșe: avans și final.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2025 David Erusu. Toate drepturile rezervate.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <button class="back-to-top" onclick="scrollToTop()">⬆</button>
+</footer>
+
+
+
+  <!-- Skill-uri, experiență, educație urmează -->
+  <script src="script.js"></script>
+</body>
+</html>
